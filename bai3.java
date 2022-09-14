@@ -135,7 +135,7 @@ class UnetiBook extends Book {
     }
 
     public static void Title() {
-        System.out.printf("%-20s|%-15s|%-15s|%-10s|%-10s|%-15s|%-10s\n", "Ten sach", "Ten tac gia", "Nha xuat ban",
+        System.out.printf("%-20s|%-15s|%-15s|%-10s|%-10s|%-15s|%-10s|\n", "Ten sach", "Ten tac gia", "Nha xuat ban",
                 "Nam XB", "Gia", "Ngon ngu", "Hoc ky");
     }
 }
@@ -164,6 +164,7 @@ class Test {
                     System.out.println("\n\n\n\t\t\t\t===Danh sach Uneti Book===");
                     PrintBar();
                     UnetiBook.Title();
+                    PrintBar();
                     for (UnetiBook unetiBook : list) {
                         unetiBook.display();
                     }
@@ -181,6 +182,7 @@ class Test {
                     System.out.println("\n\n\n\t\t\t===Danh sach Uneti Book theo nam xuat ban===");
                     PrintBar();
                     UnetiBook.Title();
+                    PrintBar();
                     for (UnetiBook unetiBook : list) {
                         unetiBook.display();
                     }
@@ -193,6 +195,7 @@ class Test {
                     System.out.println("\n\n\n\t\t\t\t===Danh sach ten \"" + tenSach.toUpperCase() + "\"===");
                     PrintBar();
                     UnetiBook.Title();
+                    PrintBar();
                     for (UnetiBook unetiBook : list) {
                         if (unetiBook.getBookName().toLowerCase().contains(tenSach.toLowerCase()))
                             unetiBook.display();
@@ -206,6 +209,7 @@ class Test {
                     System.out.println("\n\n\n\t\t\t\t===Danh sach cua tac gia \"" + tenTacGia.toUpperCase() + "\"===");
                     PrintBar();
                     UnetiBook.Title();
+                    PrintBar();
                     for (UnetiBook unetiBook : list) {
                         if (unetiBook.getBookAuthor().toLowerCase().contains(tenTacGia.toLowerCase()))
                             unetiBook.display();
